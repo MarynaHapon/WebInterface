@@ -232,6 +232,14 @@ a {
   text-transform: uppercase;
 }
 
+.sidenav .logo__text {
+  margin-top: 2px;
+}
+
+.sidenav:hover .logo__text {
+  margin-top: 0px;
+}
+
 .user {
   display: -ms-flexbox;
   display: flex;
@@ -386,7 +394,8 @@ a {
   min-width: 40px;
   background-color: #f7fcfc;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .sidenav:hover {

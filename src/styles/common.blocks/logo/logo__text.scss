@@ -6,3 +6,15 @@
   color: #000000;
   text-transform: uppercase;
 }
+
+.sidenav {
+  .logo__text {
+    margin-top: 2px;
+  }
+}
+
+.sidenav:hover {
+  .logo__text {
+    margin-top: 0px;
+  }
+}

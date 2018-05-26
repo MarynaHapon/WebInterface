@@ -4,7 +4,8 @@
   min-width: 40px;
   background-color: #f7fcfc;
   overflow: hidden;
-  transition: 0.3s;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .sidenav:hover {
