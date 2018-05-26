@@ -1,0 +1,19 @@
+.logo__img {
+  width: 30px;
+  height: 20px;
+
+  path {
+    fill: #000000;
+  }
+}
+
+.sidenav:hover {
+  .logo__img {
+    height: 16px;
+
+    path {
+      fill: #398bf7;
+    }
+  }
+}
+

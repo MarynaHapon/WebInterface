@@ -1,0 +1,6 @@
+{
+  "name": "WEB Interface",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}

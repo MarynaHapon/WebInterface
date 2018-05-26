@@ -1,0 +1,36 @@
+.sidenav__nested-message_success {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 4px;
+  height: 18px;
+  width: 18px;
+  font-weight: bold;
+  font-size: 10px;
+  color: #398bf7;
+  background-color: #ffffff;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 1px 0 rgba(128, 128, 128, 0.3);
+}
+
+.sidenav__nested-message_success::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  top: 9px;
+  left: 20px;
+  background-color: #398bf7;
+}
+
+.sidenav__nested-message_error + .sidenav__nested-message_success {
+  margin: 0 0 0 2px;
+}
+
+.sidenav:hover {
+  .sidenav__nested-message_success::before {
+    display: none;
+  }
+}

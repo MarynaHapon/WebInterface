@@ -1,0 +1,16 @@
+include /mixins/menu-item
+
+
+- var items = [{"title": "Записи", "link": "#"},{"title": "Атрибуты", "link": "#", "isActive": "true"}, {"title": "Словари", "link": "#"}, {"title": "Выборки", "link": "#"}]
+
+
+nav.menu
+  ul.menu__list
+
+    each item in items
+
+      if item.isActive === 'true'
+        +menu-item(item.link, item.title)(class="menu__item_active")
+
+      else
+        +menu-item(item.link, item.title)(class="")

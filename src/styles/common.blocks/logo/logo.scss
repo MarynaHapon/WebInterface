@@ -1,0 +1,21 @@
+.logo {
+  display: inline-flex;
+  padding: 12px;
+  height: 40px;
+  width: 100%;
+  white-space: nowrap;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px -1px #a0a0a0;
+}
+
+.sidenav {
+  .logo {
+    padding: 10px 5px;
+  }
+}
+
+.sidenav:hover {
+  .logo {
+    padding: 12px;
+  }
+}

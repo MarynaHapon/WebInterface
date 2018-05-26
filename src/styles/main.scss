@@ -1,0 +1,84 @@
+//
+// Font
+// --------------------------------------------------
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic-ext');
+
+//
+// Core
+// --------------------------------------------------
+
+@import "core/reset";
+@import "core/base";
+
+
+//
+// Common blocks
+// --------------------------------------------------
+
+@import "common.blocks/button/button";
+@import "common.blocks/button/button_green";
+@import "common.blocks/button/button_blue";
+
+@import "common.blocks/input/input";
+@import "common.blocks/input/input_search";
+
+@import "common.blocks/toolbar/toolbar";
+
+@import "common.blocks/logo/logo";
+@import "common.blocks/logo/logo__img";
+@import "common.blocks/logo/logo__text";
+
+@import "common.blocks/user/user";
+@import "common.blocks/user/user__name";
+@import "common.blocks/user/user__button";
+
+
+//
+// Desktop blocks
+// --------------------------------------------------
+
+@import "desktop.blocks/row/row";
+@import "desktop.blocks/row/row__column";
+@import "desktop.blocks/row/row__column_small";
+@import "desktop.blocks/row/row__column_large";
+
+@import "desktop.blocks/header/header";
+@import "desktop.blocks/header/header__inner";
+@import "desktop.blocks/header/header__title";
+
+@import "desktop.blocks/content/content";
+@import "desktop.blocks/content/content__header";
+@import "desktop.blocks/content/content__main";
+
+@import "desktop.blocks/menu/menu";
+@import "desktop.blocks/menu/menu__list";
+@import "desktop.blocks/menu/menu__item";
+@import "desktop.blocks/menu/menu__item_active";
+@import "desktop.blocks/menu/menu__link";
+
+@import "desktop.blocks/sidenav/sidenav";
+@import "desktop.blocks/sidenav/sidenav__list";
+@import "desktop.blocks/sidenav/sidenav__item";
+@import "desktop.blocks/sidenav/sidenav__link";
+@import "desktop.blocks/sidenav/sidenav__link-text";
+@import "desktop.blocks/sidenav/sidenav__nested-item";
+@import "desktop.blocks/sidenav/sidenav__nested-item_active";
+@import "desktop.blocks/sidenav/sidenav__nested-link";
+@import "desktop.blocks/sidenav/sidenav__nested-link_active";
+@import "desktop.blocks/sidenav/sidenav__nested-message_error";
+@import "desktop.blocks/sidenav/sidenav__nested-message_success";
+@import "desktop.blocks/sidenav/sidenav__sprite";
+
+@import "desktop.blocks/sprite/sprite";
+@import "desktop.blocks/sprite/sprite_briefcase";
+@import "desktop.blocks/sprite/sprite_data";
+@import "desktop.blocks/sprite/sprite_database";
+@import "desktop.blocks/sprite/sprite_envelope";
+@import "desktop.blocks/sprite/sprite_structure";
+@import "desktop.blocks/sprite/sprite_users";
+
+@import "desktop.blocks/list/list";
+@import "desktop.blocks/list/list__item";
+@import "desktop.blocks/list/list__item_grey";
+@import "desktop.blocks/list/list__nested-list";

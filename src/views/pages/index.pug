@@ -1,0 +1,19 @@
+extends /extends/layout
+
+
+block variables
+    - title = "IDAP"
+    - description = "Company Name - База данных"
+    - keywords = "Ключевые слова для поисковых систем"
+    - author = "Maryna Hapon"
+    - var header = "База данных:";
+
+
+block content
+  .row
+    .row__column_small
+      include ../blocks/sidenav/sidenav
+
+    .row__column_large
+      include ../blocks/header/header
+      include ../blocks/content/content

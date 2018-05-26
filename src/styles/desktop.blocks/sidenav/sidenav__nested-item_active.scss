@@ -1,0 +1,27 @@
+.sidenav__nested-item_active {
+  position: relative;
+  padding: 6px 12px 6px 12px;
+  background-color: transparent;
+}
+
+.sidenav__nested-item_active::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #398bf7;
+}
+
+.sidenav:hover {
+  .sidenav__nested-item_active {
+    padding: 6px 12px 6px 40px;
+    background-color: #398bf7;
+  }
+
+  .sidenav__nested-item_active::after {
+    display: none;
+  }
+}

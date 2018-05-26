@@ -1,0 +1,15 @@
+.list__nested-list {
+  position: relative;
+  list-style-type: none;
+}
+
+.list__nested-list:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  border-left: 1px solid #54698d;
+}

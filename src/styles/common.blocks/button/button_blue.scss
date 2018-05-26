@@ -1,0 +1,17 @@
+.btn_blue {
+  color: #398bf7;
+  background-color: #ffffff;
+  border: 1px solid #398bf7;
+}
+
+.btn_blue:hover {
+  color: #ffffff;
+  background-color: #398bf7;
+  border: 1px solid #398bf7;
+}
+
+.btn_blue:active {
+  color: #ffffff;
+  background-color: rgba(57, 139, 247, .8);
+  border: 1px solid #398bf7;
+}

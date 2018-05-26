@@ -1,0 +1,35 @@
+.sidenav__nested-message_error {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 4px;
+  height: 18px;
+  width: 18px;
+  font-weight: bold;
+  font-size: 10px;
+  background-color: #ffffff;
+  color: #f16072;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 1px 0 rgba(128, 128, 128, 0.3);
+}
+
+.sidenav__nested-message_error::before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+}
+
+.sidenav__nested-message_error::before {
+  top: 9px;
+  left: 12px;
+  background-color: #f16072;
+}
+
+.sidenav:hover {
+  .sidenav__nested-message_error::before {
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 1024px;
+  height: 100vh;
+  overflow-y: hidden;
+}

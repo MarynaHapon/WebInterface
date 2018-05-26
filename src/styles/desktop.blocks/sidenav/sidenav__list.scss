@@ -1,0 +1,12 @@
+.sidenav__list {
+  height: calc(100% - 40px);
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.sidenav:hover {
+  .sidenav__list {
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+  }
+}

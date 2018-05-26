@@ -1,0 +1,17 @@
+.btn_green {
+  color: #ffffff;
+  background-color: #2dd1ac;
+  border: 1px solid #28bb9a;
+}
+
+.btn_green:hover {
+  color: #2dd1ac;
+  background-color: #ffffff;
+  border: 1px solid #28bb9a;
+}
+
+.btn_green:active {
+  color: #ffffff;
+  background-color: rgba(45, 209, 172, .8);
+  border: 1px solid #28bb9a;
+}

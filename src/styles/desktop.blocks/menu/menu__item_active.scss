@@ -1,0 +1,13 @@
+.menu__item_active {
+  font-weight: bold;
+}
+
+.menu__item_active::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -4px;
+  height: 4px;
+  background-color: #398bf7;
+}

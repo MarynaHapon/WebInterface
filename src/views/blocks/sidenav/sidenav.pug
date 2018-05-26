@@ -1,0 +1,38 @@
+- var nav = [ { "main": { "title": "Корреспонденция", "link": "#", "style": "sprite_envelope"}, "sub": [ {"title": "Входящие", "link": "#", "errorMessage": "6", "successMessage": "2"}, {"title": "Исходящие", "link": "#", "errorMessage": "1", "successMessage": ""}, {"title": "Черновики", "link": "#", "errorMessage": "", "successMessage": ""}] }, { "main": { "title": "Проекты", "link": "#", "style": "sprite_briefcase"}, "sub": [ {"title": "Список", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Шаблоны отчетов", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Конструктор отчетов", "link": "#", "errorMessage": "", "successMessage": ""}]}, { "main": { "title": "Иерархия", "link": "#", "style": "sprite_structure"}, "sub": []}, { "main": { "title": "База данных", "link": "#", "style": "sprite_database"}, "sub": [ {"title": "Записи", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Атрибуты", "link": "#", "errorMessage": "", "successMessage": "", "isChecked": "true"}, {"title": "Словари", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Выборки", "link": "#", "errorMessage": "", "successMessage": ""} ]}, { "main": { "title": "Пользователи", "link": "#", "style": "sprite_users"}, "sub": [ {"title": "Архивные", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Архив", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Отчеты", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Логи", "link": "#", "errorMessage": "", "successMessage": ""} ]}, { "main": { "title": "Аналитика", "link": "#", "style": "sprite_data"}, "sub": [ {"title": "Записи", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Статистика", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Шаблоны отчетов", "link": "#", "errorMessage": "", "successMessage": ""}, {"title": "Конструктор отчетов", "link": "#", "errorMessage": "", "successMessage": ""} ]} ]
+
+
+nav.sidenav
+  include ../logo/logo
+
+  ul.sidenav__list
+    each item in nav
+
+      li.sidenav__item
+        a(href= item.main.link).sidenav__link #[i(class= "sidenav__sprite sprite " + item.main.style)]
+          span.sidenav__link-text !{item.main.title}
+
+        if item.sub !== []
+
+          ul.sidenav__nested-list
+
+            each subItem in item.sub
+
+              if subItem.isChecked === "true"
+                li.sidenav__nested-item.sidenav__nested-item_active
+                  a(href= subItem.link).sidenav__nested-link_active= subItem.title
+
+                  if subItem.errorMessage !== ""
+                    span.sidenav__nested-message_error= subItem.errorMessage
+
+                  if subItem.successMessage !== ""
+                    span.sidenav__nested-message_success= subItem.successMessage
+
+              else
+                li.sidenav__nested-item
+                  a(href= subItem.link).sidenav__nested-link= subItem.title
+
+                  if subItem.errorMessage !== ""
+                    span.sidenav__nested-message_error= subItem.errorMessage
+
+                  if subItem.successMessage !== ""
+                    span.sidenav__nested-message_success= subItem.successMessage
