@@ -399,6 +399,7 @@ a {
 }
 
 .sidenav:hover {
+  width: auto;
   min-width: 200px;
 }
 
