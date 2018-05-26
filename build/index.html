@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru-UA">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Company Name - База данных">
+    <meta name="keywords" content="Ключевые слова для поисковых систем">
+    <meta name="author" content="Maryna Hapon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>IDAP</title>
+    <link href="/styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="row">
+      <div class="row__column_small">
+        <nav class="sidenav"><a class="logo" href="index.html">
+            <div class="logo__img-wrap"><svg class="logo__img" width="30" height="20" viewBox="0 0 80 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M79.536 43.346H0L3.946 36.5L16.231 15.216C18.406 11.456 21.953 11.456 24.12 15.216C24.12 15.216 26.973 20.158 27.317 20.736C28.951 17.911 37.658 2.82 37.658 2.82C39.838 -0.939999 43.383 -0.939999 45.552 2.82L62.853 32.788C63.744 31.24 64.624 29.724 65.296 28.532C66.87 25.819 69.423 25.819 71.003 28.532C72.566 31.256 75.13 35.698 76.704 38.401L79.536 43.346Z" fill="#398BF7"/>
+</svg>
+            </div><span class="logo__text">Logotype</span></a>
+          <ul class="sidenav__list">
+            <li class="sidenav__item"><a class="sidenav__link" href="#"><i class="sidenav__sprite sprite sprite_envelope"></i><span class="sidenav__link-text">Корреспонденция</span></a>
+              <ul class="sidenav__nested-list">
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Входящие</a><span class="sidenav__nested-message_error">6</span><span class="sidenav__nested-message_success">2</span>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Исходящие</a><span class="sidenav__nested-message_error">1</span>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Черновики</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link" href="#"><i class="sidenav__sprite sprite sprite_briefcase"></i><span class="sidenav__link-text">Проекты</span></a>
+              <ul class="sidenav__nested-list">
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Список</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Шаблоны отчетов</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Конструктор отчетов</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link" href="#"><i class="sidenav__sprite sprite sprite_structure"></i><span class="sidenav__link-text">Иерархия</span></a>
+              <ul class="sidenav__nested-list">
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link" href="#"><i class="sidenav__sprite sprite sprite_database"></i><span class="sidenav__link-text">База данных</span></a>
+              <ul class="sidenav__nested-list">
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Записи</a>
+                </li>
+                <li class="sidenav__nested-item sidenav__nested-item_active"><a class="sidenav__nested-link_active" href="#">Атрибуты</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Словари</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Выборки</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link" href="#"><i class="sidenav__sprite sprite sprite_users"></i><span class="sidenav__link-text">Пользователи</span></a>
+              <ul class="sidenav__nested-list">
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Архивные</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Архив</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Отчеты</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Логи</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidenav__item"><a class="sidenav__link" href="#"><i class="sidenav__sprite sprite sprite_data"></i><span class="sidenav__link-text">Аналитика</span></a>
+              <ul class="sidenav__nested-list">
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Записи</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Статистика</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Шаблоны отчетов</a>
+                </li>
+                <li class="sidenav__nested-item"><a class="sidenav__nested-link" href="#">Конструктор отчетов</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="row__column_large">
+        <header class="header">
+          <div class="header__inner">
+            <h1 class="header__title">База данных:</h1>
+            <nav class="menu">
+              <ul class="menu__list">
+                            <li class="menu__item"><a class="menu__link" href="#">Записи</a></li>
+                            <li class="menu__item menu__item_active"><a class="menu__link" href="#">Атрибуты</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Словари</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Выборки</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="user">
+            <p class="user__name">Инокентий Виссарионович</p><a class="user__btn" href="#"><svg class="user__btn-img" width="15px" height="16px" viewBox="0 0 310 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M175.606 4.39325C169.75 -1.46375 160.251 -1.46475 154.393 4.39225C148.536 10.2502 148.535 19.7472 154.393 25.6052L198.787 70.0013H15C6.716 70.0013 -1.09863e-06 76.7173 -1.09863e-06 85.0013C-1.09863e-06 93.2853 6.716 100.001 15 100.001H198.785L154.393 144.393C148.535 150.251 148.535 159.748 154.393 165.606C157.322 168.535 161.161 169.999 165 169.999C168.839 169.999 172.678 168.535 175.606 165.606L245.604 95.6082C251.462 89.7512 251.462 80.2532 245.604 74.3952L175.606 4.39325Z" transform="translate(60.002 79.9988)" fill="#398BF7"/>
+<path d="M145 330C153.284 330 160 323.284 160 315C160 306.716 153.284 300 145 300H30V30H145C153.284 30 160 23.284 160 15C160 6.716 153.284 0 145 0H15C6.716 0 0 6.716 0 15V315C0 323.284 6.716 330 15 330H145Z" fill="#398BF7"/>
+</svg></a>
+          </div>
+        </header>
+        <div class="content">
+          <div class="content__header">
+            <div class="toolbar">
+              <input class="input input_search" type="text" name="search" placeholder="search">
+              <div>
+                <button class="btn btn_blue">Создать группу атрибутов</button>
+                <button class="btn btn_green">Создать атрибут</button>
+              </div>
+            </div>
+          </div>
+          <div class="content__main">
+            <ul class="list">
+              <li class="list__item list__item_grey">Черниговская <span>обл.</span>
+                <ul class="list__nested-list">
+                  <li class="list__item list__item_grey">Буковинский <span>р-н.</span>
+                    <ul class="list__nested-list">
+                      <li class="list__item">Чернигов <span>м.</span>
+                        <ul class="list__nested-list">
+                          <li class="list__item">Центральный <span>мр-н</span>
+                            <ul class="list__nested-list">
+                              <li class="list__item">Тараса Шевченко <span>вул.</span>
+                                <ul class="list__nested-list">
+                                  <li class="list__item">1-11, 39-58, 84-200 <span>буд.</span></li>
+                                  <li class="list__item">13 <span>буд.</span></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="list__item">Напивчуба-Рубайло <span>вул.</span></li>
+                    </ul>
+                  </li>
+                  <li class="list__item list__item_grey">Нежинский <span>р-н</span>
+                    <ul class="list__nested-list">
+                      <li class="list__item">Плавні <span>с.</span>
+                        <ul class="list__nested-list">
+                          <li class="list__item">Нежинский <span>мр-н</span>
+                            <ul class="list__nested-list">
+                              <li class="list__item">Ярослава Мудрого <span>наб.</span>
+                                <ul class="list__nested-list">
+                                  <li class="list__item">1 <span>буд.</span>
+                                    <ul class="list__nested-list">
+                                      <li class="list__item">1-20, 30-50, 60-70 <span>кв.</span></li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li class="list__item">Чумацький шлях <span>б-р</span>
+                                <ul class="list__nested-list">
+                                  <li class="list__item">1,3,5,7,9,11,13,15,17,19,21 <span>буд.</span></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--script(src="/vendors/bundle.js")-->
+    <!--script(src="/scripts/main.js")-->
+  </body>
+</html>
